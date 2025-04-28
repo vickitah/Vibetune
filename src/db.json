@@ -1,0 +1,23 @@
+{
+    "music_videos": [
+      {
+        "id": 1,
+        "title": "Song 1",
+        "video_url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "mood": "happy"
+      },
+      {
+        "id": 2,
+        "title": "Song 2",
+        "video_url": "https://www.youtube.com/embed/tgbNymZ7vqY",
+        "mood": "sad"
+      },
+      {
+        "id": 3,
+        "title": "Song 3",
+        "video_url": "https://www.youtube.com/embed/LsoLEjrDogU",
+        "mood": "energetic"
+      }
+    ]
+  }
+  
