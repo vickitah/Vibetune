@@ -1,10 +1,11 @@
+import React from 'react'; 
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 import { AuthProvider, useAuth } from "./hooks/useAuth";
-import MoodPage from "./pages/MoodPage"; // Import the MoodPage
+import MoodPage from "./pages/MoodPage"; 
 import Login from "./pages/Login"; 
-import SignUp from "./pages/SignUp";  // Import SignUp page
+import SignUp from "./pages/SignUp"; 
 import Profile from "./pages/Profile";
-import MusicPlayer from "./pages/MusicPlayer"; // Import MusicPlayer page
+import MusicPlayer from "./pages/MusicPlayer";
 
 export default function App() {
   const { user, loading, signOutUser } = useAuth();
@@ -30,7 +31,7 @@ export default function App() {
             ) : (
               <>
                 <Link to="/login">Login</Link>
-                <Link to="/signup">Sign Up</Link> {/* Link to the Sign Up page */}
+                <Link to="/signup">Sign Up</Link>
               </>
             )}
             <Link to="/">Home</Link>
@@ -38,11 +39,11 @@ export default function App() {
         </nav>
 
         <Routes>
-          <Route path="/" element={<MoodPage />} /> {/* Change Home to MoodPage */}
+          <Route path="/" element={<MoodPage />} />
           <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
-          <Route path="/signup" element={user ? <Navigate to="/" /> : <SignUp />} /> {/* Route for SignUp */}
+          <Route path="/signup" element={user ? <Navigate to="/" /> : <SignUp />} />
           <Route path="/profile" element={user ? <Profile /> : <Navigate to="/login" />} />
-          <Route path="/music-player/:mood" element={<MusicPlayer />} /> {/* Route for MusicPlayer with mood */}
+          <Route path="/music/:mood" element={<MusicPlayer />} /> {/* 👈 Only this was adjusted */}
         </Routes>
       </div>
     </AuthProvider>

@@ -1,37 +1,37 @@
 {
-  "songsByMood": {
-    "sad": [
-      { "id": 1, "title": "Lewis Capaldi - Someone You Loved", "url": "https://www.youtube.com/embed/zABLecsR5UE" },
-      { "id": 2, "title": "Adele - Someone Like You", "url": "https://www.youtube.com/embed/hLQl3WQQoQ0" },
-      { "id": 3, "title": "Billie Eilish - When The Party's Over", "url": "https://www.youtube.com/embed=2vjPBrBU-TM" },
-      { "id": 4, "title": "Sam Smith - Too Good At Goodbyes", "url": "https://www.youtube.com/embed=J_ub7g0c8xA" },
-      { "id": 5, "title": "Ed Sheeran - Photograph", "url": "https://www.youtube.com/embed=SPUJIbXN0WY" }
-    ],
-    "energetic": [
-      { "id": 1, "title": "Drake - God's Plan", "url": "https://www.youtube.com/embed/xpVfcZ0ZcFM" },
-      { "id": 2, "title": "Dua Lipa - Don't Start Now", "url": "https://www.youtube.com/embed/oygrmJFKYZY" },
-      { "id": 3, "title": "The Weeknd - Blinding Lights", "url": "https://www.youtube.com/embed/4NRXx6U8ABQ" },
-      { "id": 4, "title": "Katy Perry - Roar", "url": "https://www.youtube.com/embed/CevxZvSJLk8" }
-    ],
-    "dancehall": [
-      { "id": 1, "title": "Sean Paul - Temperature", "url": "https://www.youtube.com/embed/dW2MmuA1nI4" },
-      { "id": 2, "title": "Shaggy - It Wasn't Me", "url": "https://www.youtube.com/embed=2G1g0a3c4wA" },
-      { "id": 3, "title": "Rihanna - Work", "url": "https://www.youtube.com/embed=HL_q8t7d5xA" },
-      { "id": 4, "title": "Vybz Kartel - Fever", "url": "https://www.youtube.com/embed=6vXk9m0q8xA" }
-    ],
-    "chill": [
-      { "id": 1, "title": "Post Malone - Circles", "url": "https://www.youtube.com/embed/wXhTHyIgQ_U" },
-      { "id": 2, "title": "Ed Sheeran - Perfect", "url": "https://www.youtube.com/embed/2Vv-BfVoq4g" },
-      { "id": 3, "title": "Billie Eilish - Ocean Eyes", "url": "https://www.youtube.com/embed/vi0s2g1a4xA" },
-      { "id": 4, "title": "Sia - Cheap Thrills", "url": "https://www.youtube.com/embed/nhc8v5d7k6E" },
-      { "id": 5, "title": "Maroon 5 - Memories", "url": "https://www.youtube.com/embed/SlPhMPnQ58k" }
-    ],
-    "happy": [
-      { "id": 1, "title": "Pharrell Williams - Happy", "url": "https://www.youtube.com/embed/y6Sxv-sUYtM" },
-      { "id": 2, "title": "Katy Perry - Roar", "url": "https://www.youtube.com/embed/CevxZvSJLk8" },
-      { "id": 3, "title": "Justin Timberlake - Can't Stop the Feeling!", "url": "https://www.youtube.com/embed/ru0K8uYEZWw" },
-      { "id": 4, "title": "Taylor Swift - Shake It Off", "url": "https://www.youtube.com/embed/nfWlot6h_6Y" },
-      { "id": 5, "title": "Dua Lipa - Don't Start Now", "url": "https://www.youtube.com/embed/oygrmJFKYZY" }
-    ]
-  }
+  "sad": [
+    { "title": "Lewis Capaldi - Someone You Loved", "url": "https://www.youtube.com/embed/zABLecsR5UE" },
+    { "title": "Adele - Someone Like You", "url": "https://www.youtube.com/embed/hLQl3WQQoQ0" },
+    { "title": "Billie Eilish - Everything I Wanted", "url": "https://www.youtube.com/embed/EgBJmlPo8Xw" },
+    { "title": "Sam Smith - Too Good at Goodbyes", "url": "https://www.youtube.com/embed/J_ub7Etch2U" },
+    { "title": "James Arthur - Say You Won't Let Go", "url": "https://www.youtube.com/embed/0yW7w8F2TVA" }
+  ],
+  "energetic": [
+    { "title": "Drake - God's Plan", "url": "https://www.youtube.com/embed/xpVfcZ0ZcFM" },
+    { "title": "Kanye West - Stronger", "url": "https://www.youtube.com/embed/PsO6ZnUZI0g" },
+    { "title": "Eminem - Lose Yourself", "url": "https://www.youtube.com/embed/_Yhyp-_hX2s" },
+    { "title": "Imagine Dragons - Believer", "url": "https://www.youtube.com/embed/7wtfhZwyrcc" },
+    { "title": "Survivor - Eye of the Tiger", "url": "https://www.youtube.com/embed/btPJPFnesV4" }
+  ],
+  "dancehall": [
+    { "title": "Sean Paul - Temperature", "url": "https://www.youtube.com/embed/dW2MmuA1nI4" },
+    { "title": "Koffee - Toast", "url": "https://www.youtube.com/embed/p8HoEvDh70Y" },
+    { "title": "Konshens - Bruk Off Yuh Back", "url": "https://www.youtube.com/embed/RW0GX5n2gHQ" },
+    { "title": "Vybz Kartel - Fever", "url": "https://www.youtube.com/embed/q0Qh8r7Jfck" },
+    { "title": "Popcaan - Party Shot", "url": "https://www.youtube.com/embed/kDO9J07Tj2c" }
+  ],
+  "chill": [
+    { "title": "Post Malone - Circles", "url": "https://www.youtube.com/embed/wXhTHyIgQ_U" },
+    { "title": "Khalid - Better", "url": "https://www.youtube.com/embed/x3bfa3DZ8JM" },
+    { "title": "Frank Ocean - Pink + White", "url": "https://www.youtube.com/embed/62qkYd1o-FM" },
+    { "title": "SZA - Good Days", "url": "https://www.youtube.com/embed/fRUKojLOgWg" },
+    { "title": "Daniel Caesar - Best Part ft. H.E.R.", "url": "https://www.youtube.com/embed/hKgl5-lkT8U" }
+  ],
+  "happy": [
+    { "title": "Pharrell Williams - Happy", "url": "https://www.youtube.com/embed/y6Sxv-sUYtM" },
+    { "title": "Katy Perry - Firework", "url": "https://www.youtube.com/embed/QGJuMBdaqIw" },
+    { "title": "Justin Timberlake - Can't Stop The Feeling!", "url": "https://www.youtube.com/embed/ru0K8uYEZWw" },
+    { "title": "Bobby McFerrin - Don't Worry Be Happy", "url": "https://www.youtube.com/embed/d-diB65scQU" },
+    { "title": "Shakira - Waka Waka (This Time for Africa)", "url": "https://www.youtube.com/embed/pRpeEdMmmQ0" }
+  ]
 }
