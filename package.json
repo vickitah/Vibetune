@@ -8,7 +8,8 @@
   "start:server": "json-server --watch db.json --port 3000",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "git add . && git commit -m 'deploy' && git push && sleep 5 && xdg-open  https://vibetune-nssrtmhor-victors-projects-5036ed4d.vercel.app"
   },
   "dependencies": {
     "firebase": "^11.6.1",

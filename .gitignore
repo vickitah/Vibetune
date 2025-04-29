@@ -28,3 +28,4 @@ pnpm-debug.log*
 *.sublime-project
 *.sublime-workspace
 
+.vercel
