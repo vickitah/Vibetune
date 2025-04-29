@@ -1,31 +1,51 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
-const MoodPage = () => {
-  const navigate = useNavigate();
+function MusicPlayer() {
+  const { mood } = useParams();
+  const [songs, setSongs] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const moods = ['sad', 'energetic', 'dancehall', 'chill', 'happy'];
+  useEffect(() => {
+    fetch(`http://localhost:3000/songsByMood`)
+      .then(response => response.json())
+      .then(data => {
+        setSongs(data[mood] || []);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error fetching songs:', error);
+        setLoading(false);
+      });
+  }, [mood]);
 
-  const handleMoodSelect = (mood) => {
-    navigate(`/music-player/${mood}`);
-  };
+  if (loading) {
+    return <div>Loading songs...</div>;
+  }
+
+  if (songs.length === 0) {
+    return <div>No songs available for this mood.</div>;
+  }
 
   return (
-    <div className="p-6">
-      <h1 className="text-4xl font-bold text-center mb-6">Pick Your Mood 🎵</h1>
-      <div className="grid grid-cols-2 gap-6 max-w-md mx-auto">
-        {moods.map((mood) => (
-          <button
-            key={mood}
-            onClick={() => handleMoodSelect(mood)}
-            className="bg-blue-600 hover:bg-blue-800 p-4 rounded-lg text-white font-semibold capitalize"
-          >
-            {mood}
-          </button>
-        ))}
-      </div>
+    <div className="music-player">
+      <h2>{mood.toUpperCase()} Playlist</h2>
+      {songs.map(song => (
+        <div key={song.id} className="song">
+          <h4>{song.title}</h4>
+          <iframe 
+            width="300" 
+            height="200" 
+            src={song.url} 
+            title={song.title} 
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      ))}
     </div>
   );
-};
+}
 
-export default MoodPage;
+export default MusicPlayer;
